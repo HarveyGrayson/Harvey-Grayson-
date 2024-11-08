@@ -1,0 +1,59 @@
+def is_alphabetic (word):
+
+return word.isalpha()
+
+def main():
+
+story
+
+Once upon a time, there was a [noun1] who lived in a [adjective1] [noun]. Every [noun2], the [noun3] would [verb1] [adverb1].
+
+One day, the [noun1] found a [adjective1] [noun4] in the [noun3]. The [noun1] and the [noun4] became fast friends and lived happily ever after.
+
+print("Welcome to Mad Libs!")
+
+print("Fill in the blanks to complete the story:")
+
+print(story)
+
+inputs = {}
+
+for placeholder in ["noun1", "adjective1", "noun2", "verb1", "adverb1", "noun3", "noun4"]:
+
+while True:
+
+user_input input (f"Enter a word for ")
+
+if is_alphabetic (user_input):
+
+inputs [placeholder] = user_input
+
+antra
+
+break
+
+else:
+
+print("Invalid input. Please enter alphabetic characters only.")
+
+filled_story = story
+
+for placeholder, value in inputs.items():
+
+filled_story filled_story.replace(f"[{placeholder}]", value)
+
+print("\nYOUR STORY!: ") led_story)
+
+# Check if the story makes sense
+
+if "[noun" in filled_story:
+
+print("\nTHE STORY WAS NOT MEANINGFUL!! GIVE CORRECT INPUT!")
+
+else:
+
+print("\nThe End!")
+
+if_name == "__main__":
+
+main()
